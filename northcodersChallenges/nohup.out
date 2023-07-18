@@ -1,0 +1,140 @@
+Initializing local storage instance
+(electron) Sending uncompressed crash reports is deprecated and will be removed in a future version of Electron. Set { compress: true } to opt-in to the new behavior. Crash reports will be uploaded gzipped, which most crash reporting servers support.
+[38233:0716/182220.414205:ERROR:viz_main_impl.cc(186)] Exiting GPU process due to errors during initialization
+[07/16/23, 18:22:20:430] info: 
+╔═════════════════════════════════════════════════════════╗
+║      Slack 4.33.73, linux 5.19.0-46-generic on x64      ║
+╚═════════════════════════════════════════════════════════╝ 
+[07/16/23, 18:22:20:430] info: Configured logger via 
+{
+  "enableConsoleTransport": true,
+  "identifierOverride": "webapp-service-worker-console",
+  "shouldUseNewBackend": false,
+  "loggerInstanceCount": 2
+}
+[07/16/23, 18:22:20:430] info: Predefined values for process 
+{
+  "NODE_ENV": "production",
+  "platform": "linux",
+  "type": "browser",
+  "timeZone": "Europe/London",
+  "PACKAGE_MANIFEST.productName": "Slack",
+  "PACKAGE_MANIFEST.version": "4.33.73",
+  "PACKAGE_MANIFEST.commit": "e0b59d9",
+  "PACKAGE_MANIFEST.branch": "HEAD"
+}
+[07/16/23, 18:22:21:078] info: 
+╔═════════════════════════════════════════════════════════╗
+║      Slack 4.33.73, linux 5.19.0-46-generic on x64      ║
+╚═════════════════════════════════════════════════════════╝ 
+[07/16/23, 18:22:21:078] info: Configured logger via 
+{
+  "enableConsoleTransport": true,
+  "identifierOverride": "webapp-console",
+  "shouldUseNewBackend": false,
+  "loggerInstanceCount": 3
+}
+[07/16/23, 18:22:21:079] info: Predefined values for process 
+{
+  "NODE_ENV": "production",
+  "platform": "linux",
+  "type": "browser",
+  "timeZone": "Europe/London",
+  "PACKAGE_MANIFEST.productName": "Slack",
+  "PACKAGE_MANIFEST.version": "4.33.73",
+  "PACKAGE_MANIFEST.commit": "e0b59d9",
+  "PACKAGE_MANIFEST.branch": "HEAD"
+}
+[07/16/23, 18:22:21:079] info: Starting Sentry (Preload) 
+[07/16/23, 18:22:21:079] info: getSentryDSN: Setting sentry URL to slack.com 
+[07/16/23, 18:22:21:079] info: Creating desktop interface object 
+[07/16/23, 18:22:21:079] info: Exposing context bridge 
+[07/16/23, 18:22:21:079] info: Store: WINDOW_CREATED {
+  "type": "main",
+  "id": 1,
+  "frame": {
+    "isHtmlFullScreen": false,
+    "isFullScreen": false,
+    "isMinimized": false,
+    "isMaximized": false,
+    "isVisible": false,
+    "isFocused": false,
+    "bounds": {
+      "x": 448,
+      "y": 244,
+      "width": 1024,
+      "height": 768
+    },
+    "hasVibrancy": false
+  }
+} 
+[07/16/23, 18:22:21:080] info: Store: RECORD_PERFORMANCE_TIMING {
+  "phase": 1,
+  "interval": 92
+} 
+[07/16/23, 18:22:21:080] info: Store: UPSERT_WEB_CONTENTS {
+  "id": 1,
+  "state": "unloaded"
+} 
+[07/16/23, 18:22:21:080] info: Store: UPDATE_SETTINGS {
+  "userTheme": "light"
+} 
+[07/16/23, 18:22:21:080] info: Store: UPDATE_SETTINGS {
+  "systemThemeSyncEnabled": false
+} 
+[07/16/23, 18:22:21:080] info: [TRACER] Tracing is not sampled by default for this session. 
+[07/16/23, 18:22:21:080] info: Breadcrumb: navigation: undefined {
+  "from": "/ssb/first?redir=%2Fssb%2Fclient#/",
+  "to": "/ssb/first?redir=%2Fssb%2Fclient#/"
+} 
+[07/16/23, 18:22:21:080] warn: TELEMETRY You tried to get a team-specific telemeter but didn’t provide enough context and are getting the generic telemeter instead which is likely not what you want. 
+[07/16/23, 18:22:21:080] info: Store: UPSERT_WEB_CONTENTS {
+  "id": 1,
+  "state": "loaded"
+} 
+[07/16/23, 18:22:21:080] info: Store: RECORD_PERFORMANCE_TIMING {
+  "phase": 2,
+  "interval": 573
+} 
+[07/16/23, 18:22:21:080] info: Store: MAIN_WINDOW_SHOWN  
+[07/16/23, 18:22:21:080] info: Store: UPDATE_SETTINGS {
+  "mainWindowSettings": {
+    "fullScreen": false,
+    "maximized": false,
+    "bounds": {
+      "x": 448,
+      "y": 244,
+      "width": 1024,
+      "height": 768
+    }
+  }
+} 
+[07/16/23, 18:22:21:080] info: Store: CLEAR_NOTIFICATIONS  
+[07/16/23, 18:22:21:102] info: Store: UPSERT_WEB_CONTENTS {
+  "id": 1,
+  "type": "app",
+  "history": "[REDACTED]"
+} 
+[07/16/23, 18:22:21:497] info: Breadcrumb: fetch: undefined {
+  "method": "GET",
+  "url": "https://slack.com/api/api.test?error=",
+  "status_code": 200
+} 
+[07/16/23, 18:22:21:499] info: Network status check {
+  "elapsed_time_ms": 156,
+  "navigator_online": true,
+  "api_test": "online"
+} 
+[07/16/23, 18:22:21:500] info: Store: SET_NETWORK_STATUS online 
+[07/16/23, 18:22:22:129] info: Store: UPDATE_SETTINGS {
+  "mainWindowSettings": {
+    "fullScreen": false,
+    "maximized": false,
+    "bounds": {
+      "x": 448,
+      "y": 281,
+      "width": 1024,
+      "height": 768
+    }
+  }
+} 
