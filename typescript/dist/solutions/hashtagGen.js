@@ -1,5 +1,5 @@
 function generateHashtag(str) {
-    if (str.replace(/\s/g, "").length === 0 || str.replace(/\s/g, "").length > 140) {
+    if (str.replace(/\s/g, "").length === 0 || str.replace(/\s/g, "").length > 139) {
         return false;
     }
     const words = str.split(' ');
@@ -13,4 +13,3 @@ function generateHashtag(str) {
 console.log(generateHashtag('Hello there thanks for    trying my Kata'));
 console.log(generateHashtag('Codewars'));
 console.log(generateHashtag('Code' + ' '.repeat(140) + 'wars'));
-console.log(generateHashtag('a'.repeat(140)));
