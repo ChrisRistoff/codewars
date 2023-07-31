@@ -1,5 +1,8 @@
 function getCellAdresses(range) {
     const [start, end] = range.split(":");
+    if (start === end) {
+        return [];
+    }
     const startCol = start[0];
     const startRow = Number(start.slice(1));
     const endCol = end[0];
