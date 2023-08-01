@@ -31,6 +31,16 @@ function decimalToBinary(x: number): string {
   return binary
 }
 
+function padStart(value: string | number, length: number, padChar: string): string {
+  const str = String(value);
+  if (str.length >= length) {
+    return str;
+  } else {
+    const padding = Array(length - str.length + 1).join(padChar);
+    return padding + str;
+  }
+}
+
 export function numToIp(x: number): string {
   const binary = decimalToBinary(x);
   const binaryArray = binary.split("");
@@ -54,10 +64,13 @@ export function numToIp(x: number): string {
       }
     }
 
-    ip += num + ".";
+    ip += padStart(num, 3, "0") + ".";
   }
 
-  return ip.slice(0, -1);
+  // Remove the extra dot at the end of the IP address
+  ip = ip.slice(0, -1);
+
+  return ip || "0.0.0.0"; // If the IP address is empty, return "0.0.0.0"
 }
 
 

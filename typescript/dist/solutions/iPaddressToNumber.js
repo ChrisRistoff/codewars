@@ -28,6 +28,16 @@ function decimalToBinary(x) {
     }
     return binary;
 }
+function padStart(value, length, padChar) {
+    const str = String(value);
+    if (str.length >= length) {
+        return str;
+    }
+    else {
+        const padding = Array(length - str.length + 1).join(padChar);
+        return padding + str;
+    }
+}
 function numToIp(x) {
     const binary = decimalToBinary(x);
     const binaryArray = binary.split("");
@@ -46,9 +56,11 @@ function numToIp(x) {
                 num += Math.pow(2, 7 - j);
             }
         }
-        ip += num + ".";
+        ip += padStart(num, 3, "0") + ".";
     }
-    return ip.slice(0, -1);
+    // Remove the extra dot at the end of the IP address
+    ip = ip.slice(0, -1);
+    return ip || "0.0.0.0"; // If the IP address is empty, return "0.0.0.0"
 }
 exports.numToIp = numToIp;
 console.log(ipToNum("192.168.1.1"));
