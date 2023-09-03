@@ -3,16 +3,19 @@ export function validBraces(braces: string): boolean {
     var length = braces.length
     braces = braces.replace("()", "").replace("[]", "").replace("{}", "")
   } while (length !== braces.length)
-  
+
   return braces.length === 0
 }
 
 
 
-const openingBraces = '({[';
-const closingBraces = ')}]';
 
 function validBraces2(braces: string) {
+
+  const openingBraces = '({[';
+  const closingBraces = ')}]';
+
+
   const stack: string[] = [];
 
   for (let brace of braces) {
